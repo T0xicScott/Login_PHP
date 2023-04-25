@@ -2,10 +2,10 @@
 
 session_start();
 
-if (isset($_GET['page']) && ($_GET['page'] == 'secrete_1.php')) {
+if (isset($_GET['page']) && ($_GET['page'] == 'login.php')) {
     header('Location: login.php');
     exit();
-} elseif (isset($_GET['page']) && $_GET['page'] == 'login.php') {
+} elseif (isset($_GET['page']) && $_GET['page'] == 'secrete_1.php') {
     echo 'Bienvenue, ' . $_SESSION['user'] . '!<br><br>';
     echo '<a href="logout.php">Se déconnecter</a>';
 } else {

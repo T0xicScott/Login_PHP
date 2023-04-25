@@ -4,7 +4,7 @@ $login = $_POST['login'];
 $password = $_POST['password'];
 
 if (($login == 'Exelib' && $password == 'exe123') || ($login == 'Admin' && $password == 'Admin123')) {
-	header('Location: secrète_1.php') || header('Location : secrète_2.php');
+	header('Location: page_accueil.php');
 	exit();
 } else {
 	echo 'Identifiants incorrects.';
