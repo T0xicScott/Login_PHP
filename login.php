@@ -4,7 +4,7 @@ $login = $_POST['login'];
 $password = $_POST['password'];
 
 if (($login == 'Exelib' && $password == 'exe123') || ($login == 'Admin' && $password == 'Admin123')) {
-	header('Location: page_accueil.php');
+	header('Location: secrète_1.php') || header('Location : secrète_2.php');
 	exit();
 } else {
 	echo 'Identifiants incorrects.';
@@ -23,7 +23,7 @@ if (($login == 'Exelib' && $password == 'exe123') || ($login == 'Admin' && $pass
 </head>
 <body>
 	<h1>Connexion</h1>
-	<form method="POST" action="traitement_login.php">
+	<form method="POST" action="login.php">
 		<label for="login">Login:</label>
 		<input type="text" name="login" required><br><br>
 		<label for="password">Mot de passe:</label>

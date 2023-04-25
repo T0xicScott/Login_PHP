@@ -8,5 +8,7 @@
 </head>
 <body>
     <h1>Page Principale</h1>
+    <?php include 'secrète_1.php'; ?>
+    <?php include 'secrète_2.php'; ?>
 </body>
 </html>

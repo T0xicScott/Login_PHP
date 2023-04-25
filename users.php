@@ -31,13 +31,3 @@ if (isset($_SESSION['user'])) {
 } else {
     include 'login.php';
 }
-
-if (isset($_GET['page']) && ($_GET['page'] == 'secrete_1.php' || $_GET['page'] == 'secrete_2.php')) {
-    header('Location: login.php');
-    exit();
-} elseif (isset($_GET['page']) && $_GET['page'] == 'login.php') {
-    echo 'Bienvenue, ' . $_SESSION['user'] . '!<br><br>';
-    echo '<a href="logout.php">Se déconnecter</a>';
-} else {
-    include 'login.php';
-}
